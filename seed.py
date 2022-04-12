@@ -216,5 +216,4 @@ def isURLWorking(url):
     
 # createUsers()
 # populateRedditDB(['woahdude','blackcats','awww', 'london', 'gaming','LifeProTips', 'mildlyinteresting'], 15)
-# extractComments()
 UserFollowingSubpage()

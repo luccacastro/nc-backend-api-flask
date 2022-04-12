@@ -1,7 +1,7 @@
 from importlib.abc import ResourceReader
 from flask import Flask, abort, jsonify, request
 from flask_restful import Api, Resource, reqparse
-from models import Users, Post, Comment, Subpage
+# from models import Users, Post, Comment, Subpage
 from api import app, db
 import random, string
 
