@@ -89,7 +89,7 @@ class Comment(db.Model):
 
 
 db.create_all()
-
+print('end')
 # subpage1 = Subpage(title='surrealmemes', description='memes from a alternate reality', created_at=None)
 # subpage2 = Subpage(title='funny', description='funny memes', created_at=None)
 # user = Users.query.all()[0]

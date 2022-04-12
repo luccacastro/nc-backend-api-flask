@@ -193,11 +193,11 @@ def postDataTest():
         
     
 def getRandomUser():
-    rand = random.randrange(0, 200) 
+    rand = random.randrange(0, 120) 
     return Users.query.all()[rand]
 
 def getRandomSubPage():
-    rand = random.randrange(0, 15) 
+    rand = random.randrange(0, 7) 
     return Subpage.query.all()[rand]
     
 
@@ -215,6 +215,6 @@ def isURLWorking(url):
 
     
 # createUsers()
-populateRedditDB(['javascript','learnprogramming', 'frontend', 'webdev','LifeProTips'], 30)
+# populateRedditDB(['woahdude','blackcats','awww', 'london', 'gaming','LifeProTips', 'mildlyinteresting'], 15)
 # extractComments()
 UserFollowingSubpage()
