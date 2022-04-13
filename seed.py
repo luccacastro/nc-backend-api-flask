@@ -145,14 +145,6 @@ def extractMedia(data):
             video_url = data['media']['oembed']['html']
             media_data['url'] = data['media']['oembed']['html'].split('src')[1].split(' ')[0][2:len(video_url)-1]
             media_data['type'] = 'yt_url'
-    # elif data.get('preview'):
-        # regex = re.compile('(?i).(jpg|png|gif)$')
-        # if regex.search(media_data['url']):
-        #     media_data['url'] = 'https://i.redd.it/{0}'.format(data['preview']['images'][0]['source']['url'].replace('?','/').split('/')[3])
-        #     media_data['type'] = 'image'
-        #     if isURLWorking(media_data['url']):
-        #         return {}
-    
     elif data.get('url_overridden_by_dest'):
         # console.log('has url')
         media_data['url'] = data['url_overridden_by_dest']
@@ -214,6 +206,6 @@ def isURLWorking(url):
     return r.status_code
 
     
-# createUsers()
-# populateRedditDB(['woahdude','blackcats','awww', 'london', 'gaming','LifeProTips', 'mildlyinteresting'], 15)
+createUsers()
+populateRedditDB(['woahdude','blackcats','awww', 'london', 'gaming','LifeProTips', 'mildlyinteresting'], 15)
 UserFollowingSubpage()

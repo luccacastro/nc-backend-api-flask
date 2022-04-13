@@ -90,27 +90,3 @@ class Comment(db.Model):
 
 db.create_all()
 print('end')
-# subpage1 = Subpage(title='surrealmemes', description='memes from a alternate reality', created_at=None)
-# subpage2 = Subpage(title='funny', description='funny memes', created_at=None)
-# user = Users.query.all()[0]
-
-# user = Users(name='inconvenient_w', email='luccazutin@gmail.com', phone='+44 079891234', avatar_url='img.ur/3ksdwd21', rank='Mod', created_at=None)
-# user1 = Users(name='resourceful_lobster', email='fethc@gmail.com', phone='+44 90123442', avatar_url='img.ur/3ksdwd21', rank='Mod', created_at=None)
-
-# user.following.append(subpage1)
-# user.following.append(subpage2)
-# db.session.add_all([subpage1])
-# db.session.commit()
-# print(user.following)
-# print(subpage1.followers)
-# post = Post(ref_id='u3jk120', media_type='text', media_link='youtube.com/43241', title='this is my first post', body='hello there everyone!', users=user, subpage=subpage2, created_at=None)
-# comment = Comment(body='This sucks ass', parent_comment_id='hello', ref_id='ytf1023', post=post, user=user, votes=None, created_at=None)
-
-
-# db.session.add_all([user, subpage1, comment, post])
-# db.session.commit()
-
-
-# print(post.subpage.title)
-# subpage1 = Subpage.query.filter_by(title='surrealmemes').all()[0]
-# print(user.post[0], subpage1.post[0].comment[0].body)
