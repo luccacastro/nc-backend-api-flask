@@ -17,7 +17,7 @@ def get_random_string(length):
 used_data = []
 def createUsers():
     ranks = ['Staff', 'Senior Mod', 'Mod', 'Distinguished User', 'Experienced User', 'User', 'New User']
-    for i in range(0,200):
+    for i in range(0,120):
         faker = Faker()
         
         user_name = faker.user_name()
@@ -186,6 +186,7 @@ def postDataTest():
     
 def getRandomUser():
     rand = random.randrange(0, 120) 
+    print(rand)
     return Users.query.all()[rand]
 
 def getRandomSubPage():

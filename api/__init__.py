@@ -10,7 +10,7 @@ dotenv.load_dotenv()
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-URI = 'postgresql://{0}:{1}@{2}:{3}/{4}'.format(os.getenv('DBUSER'), os.getenv('PASSWORD'), os.getenv('HOST'), os.getenv('PORT'),os.getenv('DBNAME'))
+URI = 'postgresql://{0}:{1}@{2}:{3}/{4}'.format(os.getenv('DBUSER'), os.getenv('PASSWORD'), os.getenv('HOST'), os.getenv('DBPORT'),os.getenv('DBNAME'))
 print(URI)
 # db_name = "postgresql://wcrtwhjnndfkkf:a4f5ac23e1ca034d8e70ca13d3d1e893274db26472d0ded806cf19caf529b6c7@ec2-44-194-4-127.compute-1.amazonaws.com:5432/d2fkeg4fjpaki5"
 
